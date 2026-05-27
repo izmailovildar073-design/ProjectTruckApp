@@ -7,13 +7,13 @@ using System.Drawing;
 
 namespace ProjectTruckApp.Drawnings
 {
-	public class DrawingTruck
+	public abstract class DrawingTruck
 	{
-		protected EntityTruck EntityTruck { get; set; }
-		protected int? StartPosX { get; set; }
-		protected int? StartPosY { get; set; }
-		private readonly int _drawWidth;
-		private readonly int _drawHeight;
+        public EntityTruck EntityTruck { get; protected set; }
+        public int? StartPosX { get; set; }
+        public int? StartPosY { get; set; }
+        public readonly int _drawWidth;
+        public readonly int _drawHeight;
 
 		protected DrawingTruck(int drawWidth, int drawHeight)
 		{
@@ -25,7 +25,6 @@ namespace ProjectTruckApp.Drawnings
 
 		public DrawingTruck(int speed, double weight, Color bodyColor)
 		{
-			EntityTruck = new EntityTruck(speed, weight, bodyColor);
 			_drawWidth = 130;
 			_drawHeight = 45;
 			StartPosX = null;

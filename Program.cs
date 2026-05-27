@@ -13,7 +13,7 @@ namespace ProjectTruckApp
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FormTruck());
-		}
+            Application.Run(new FormFleet());
+        }
 	}
 }
