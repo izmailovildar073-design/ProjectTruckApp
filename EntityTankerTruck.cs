@@ -29,5 +29,10 @@ namespace ProjectTruckApp.Entities
             HasSignalBeacon = hasSignalBeacon;
             HasWheelOrnament = hasWheelOrnament;
         }
+
+        public override EntityTruck Clone()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

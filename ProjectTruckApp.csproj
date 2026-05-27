@@ -49,8 +49,10 @@
     <Compile Include="BaseTemplateMovement.cs" />
     <Compile Include="CanvasForTruck.cs" />
     <Compile Include="DirectionType.cs" />
+    <Compile Include="DrawingStandardTruck.cs" />
     <Compile Include="DrawingTruck.cs" />
     <Compile Include="DrawingTankerTruck.cs" />
+    <Compile Include="EntityStandardTruck.cs" />
     <Compile Include="EntityTankerTruck.cs" />
     <Compile Include="EntityTruck.cs" />
     <Compile Include="Form1.cs">
@@ -59,13 +61,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTruck.cs">
+    <Compile Include="FormFleet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTruckDesigner.cs">
+    <Compile Include="FormTests.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IMoveavleObject.cs" />
+    <Compile Include="MassiveGenericObjects.cs" />
     <Compile Include="MoveableAdapterTruck.cs" />
     <Compile Include="MovementDirection.cs" />
     <Compile Include="MoveToCenter.cs" />
@@ -76,6 +79,12 @@
     <Compile Include="TemplateMovementStatus.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFleet.resx">
+      <DependentUpon>FormFleet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTests.resx">
+      <DependentUpon>FormTests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
